@@ -16,4 +16,7 @@ public class InVoiceGenerator {
         }
         return aggregateFare;
     }
+    public InvoiceSummary getInvoiceSummary(Ride[] rides) {
+        return new InvoiceSummary(rides.length, calculateFareForMultipleRides(rides));
+    }
 }
