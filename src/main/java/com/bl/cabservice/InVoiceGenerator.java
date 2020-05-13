@@ -9,4 +9,11 @@ public class InVoiceGenerator {
         double totalFare = RATE_PER_KM * distance + RATE_PER_MIN * time;
         return Math.max(totalFare, MINIMUM_FARE);
     }
+    public double calculateFareForMultipleRides(Ride[] rides) {
+        double aggregateFare = 0;
+        for (Ride ride : rides) {
+            aggregateFare = aggregateFare + calculateFare(ride.distance, ride.time);
+        }
+        return aggregateFare;
+    }
 }
