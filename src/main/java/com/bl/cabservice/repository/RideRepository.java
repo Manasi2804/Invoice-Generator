@@ -1,4 +1,4 @@
-package com.bl.cabservice;
+package com.bl.cabservice.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;

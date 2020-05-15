@@ -1,4 +1,4 @@
-package com.bl.cabservice;
+package com.bl.cabservice.summary;
 
 public class InvoiceSummary {
     public int noOfRides;
@@ -18,17 +18,5 @@ public class InvoiceSummary {
         return noOfRides == that.noOfRides &&
                 Double.compare(that.totalFare, totalFare) == 0 &&
                 Double.compare(that.averageFarePerRide, averageFarePerRide) == 0;
-    }
-    @Override
-    public int hashCode() {
-        return 0;
-    }
-    @Override
-    public String toString() {
-        return "InvoiceSummary -> {" +
-                "noOfRides=" + noOfRides +
-                ", totalFare=" + totalFare +
-                " , averageFarePerRide=" + averageFarePerRide +
-                '}';
     }
 }

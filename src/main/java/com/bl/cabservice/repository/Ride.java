@@ -1,4 +1,4 @@
-package com.bl.cabservice;
+package com.bl.cabservice.repository;
 
 public class Ride {
     public double distance;
